@@ -16,9 +16,7 @@ public class TextFileValidator {
 			try {
 				String type = Files.probeContentType(file.toPath());
 				if (null != type) {
-					if ((type.equals("text/plain") || type.equals("text/plain")) && validTextFileExtension(file)) {
-						return true;
-					}
+					return (type.equalsIgnoreCase("text/plain") && validTextFileExtension(file));
 				}
 			} catch (IOException x) {
 				return false;
@@ -27,14 +25,12 @@ public class TextFileValidator {
 		return false;
 	}
 
-	public static boolean valid(Path file) {
-		if (null != file && file.toFile().exists() && file.toFile().isFile()) {
+	public static boolean valid(Path path) {
+		if (null != path && path.toFile().exists() && path.toFile().isFile()) {
 			try {
-				String type = Files.probeContentType(file);
+				String type = Files.probeContentType(path);
 				if (null != type) {
-					if ((type.equals("text/plain") || type.equals("text/plain")) && validTextFileExtension(file)) {
-						return true;
-					}
+					return (type.equalsIgnoreCase("text/plain") && validTextFileExtension(path));
 				}
 			} catch (IOException x) {
 				return false;
@@ -44,17 +40,18 @@ public class TextFileValidator {
 	}
 
 	public static boolean valid(String file) {
+		Path path = null;
 		if (null != file) {
-			if (Paths.get(file).toFile().exists() && Paths.get(file).toFile().isFile()) {
-				try {
-					String type = Files.probeContentType(Paths.get(file));
-					if (null != type) {
-						if ((type.equals("text/plain") || type.equals("text/plain")) && validTextFileExtension(file)) {
-							return true;
+			if (null != (path = Paths.get(file))) {
+				if (path.toFile().isFile()) {
+					try {
+						String type = Files.probeContentType(path);
+						if (null != type) {
+							return (type.equalsIgnoreCase("text/plain") && validTextFileExtension(file));
 						}
+					} catch (IOException x) {
+						return false;
 					}
-				} catch (IOException x) {
-					return false;
 				}
 			}
 		}

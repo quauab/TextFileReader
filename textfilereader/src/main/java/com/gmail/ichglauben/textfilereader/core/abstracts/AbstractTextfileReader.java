@@ -14,7 +14,7 @@ public abstract class AbstractTextfileReader {
 	protected static List<String> readFile(File file) {
 		Charset charset = Charset.forName("ISO-8859-1");
 		if (null != file) {
-			if (file.exists() && file.isFile() && TextFileValidator.valid(file)) {
+			if (TextFileValidator.valid(file)) {
 				try {
 					return Files.readAllLines(file.toPath(), charset);
 				} catch (IOException ioe) {
@@ -28,7 +28,7 @@ public abstract class AbstractTextfileReader {
 	protected static List<String> readFile(Path file) {
 		Charset charset = Charset.forName("ISO-8859-1");
 		if (null != file) {
-			if (file.toFile().exists() && file.toFile().isFile() && TextFileValidator.valid(file)) {
+			if (TextFileValidator.valid(file)) {
 				try {
 					return Files.readAllLines(file, charset);
 				} catch (IOException ioe) {
@@ -44,7 +44,7 @@ public abstract class AbstractTextfileReader {
 		File file = null;
 		if (null != path) {
 			if (null != (file = new File(path))) {
-				if (file.exists() && file.isFile() && TextFileValidator.valid(file)) {
+				if (TextFileValidator.valid(file)) {
 					try {
 						return Files.readAllLines(file.toPath(), charset);
 					} catch (IOException ioe) {

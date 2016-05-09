@@ -1,0 +1,296 @@
+<dependency>
+	<groupId>com.beust</groupId>
+	<artifactId>jcommander</artifactId>
+	<version>1.27</version>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.5.1</version>
+</dependency>
+
+<dependency>
+	<groupId>cglib</groupId>
+	<artifactId>cglib-nodep</artifactId>
+	<version>3.2.0</version>
+</dependency>
+
+<dependency>
+	<groupId>joda-time</groupId>
+	<artifactId>joda-time</artifactId>
+	<version>2.9.1</version>
+</dependency>
+
+	HTML Parser
+<dependency>
+	<groupId>org.jsoup</groupId>
+	<artifactId>jsoup</artifactId>
+	<version>1.8.3</version>
+</dependency>
+
+<dependency>
+	<groupId>net.sourceforge.nekohtml</groupId>
+	<artifactId>nekohtml</artifactId>
+	<version>1.9.22</version>
+</dependency>
+
+	Java Native Access
+<dependency>
+	<groupId>net.java.dev.jna</groupId>
+	<artifactId>jna</artifactId>
+	<version>4.2.1</version>
+</dependency>
+
+<dependency>
+	<groupId>net.java.dev.jna</groupId>
+	<artifactId>jna-platform</artifactId>
+	<version>4.2.1</version>
+</dependency>
+
+	bytecode libraries
+<dependency>
+	<groupId>cglib</groupId>
+	<artifactId>cglib-nodep</artifactId>
+	<version>3.2.0</version>
+</dependency>
+
+	commons io
+<dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+	<version>2.4</version>
+</dependency>
+
+	commons vfs core
+<dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-vfs2</artifactId>
+	<version>2.0</version>
+</dependency>
+
+	The missing bridge between Java and native C++
+<dependency>
+	<groupId>org.bytedeco</groupId>
+	<artifactId>javacpp</artifactId>
+	<version>1.1</version>
+</dependency>
+
+<artifactId>maven-resources-plugin</artifactId>
+	<version>2.7</version>
+</dependency>
+
+	Data File Reader Base
+<dependency>
+	<groupId>net.krotscheck.dfr</groupId>
+	<artifactId>data-file-reader-base</artifactId>
+	<version>1.0.9</version>
+</dependency>
+ 
+<dependency>
+	<groupId>org.apache.sanselan</groupId>
+	<artifactId>sanselan</artifactId>
+	<version>0.97-incubator</version>
+</dependency>
+
+	GUAVA Google Core Library for Java
+<dependency>
+	<groupId>com.google.guava</groupId>
+	<artifactId>guava</artifactId>
+	<version>19.0</version>
+</dependency>
+
+	Apache HttpClient » 4.5.1
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.5.1</version>
+</dependency>
+
+	jsoup
+<dependency>
+  <!-- jsoup HTML parser library @ http://jsoup.org/ -->
+  <groupId>org.jsoup</groupId>
+  <artifactId>jsoup</artifactId>
+  <version>1.8.3</version>
+</dependency>
+
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+	Spring Framework
+<dependencies>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>4.2.4.RELEASE</version>
+    </dependency>
+</dependencies>
+
+	Spring Shell
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.shell</groupId>
+        <artifactId>spring-shell</artifactId>
+        <version>1.2.0.M1</version>
+    </dependency>
+</dependencies><repositories>
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>http://repo.spring.io/milestone</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+
+	Spring IO
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>io.spring.platform</groupId>
+            <artifactId>platform-bom</artifactId>
+            <version>2.0.1.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+	Commons-io 2.4
+<dependency>
+	<groupId>commons-fileupload</groupId>
+	<artifactId>commons-fileupload</artifactId>
+	<version>1.3.1</version>
+</dependency>
+
+<dependency>
+	<groupId>commons-io</groupId>
+	<artifactId>commons-io</artifactId>
+	<version>2.4</version>
+</dependency>
+
+	Commons Logging
+<dependency>
+	<groupId>commons-logging</groupId>
+	<artifactId>commons-logging</artifactId>
+	<version>1.2</version>
+</dependency>
+
+	SLF4j
+<dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+	<version>1.7.14</version>
+</dependency>
+
+	Logback Classic
+<dependency>
+	<groupId>ch.qos.logback</groupId>
+	<artifactId>logback-classic</artifactId>
+	<version>1.1.3</version>
+</dependency>
+
+	Spring Framework
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-context</artifactId>
+	<version>4.2.4.RELEASE</version>
+</dependency>
+
+		Spring Web
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-web</artifactId>
+	<version>4.2.4.RELEASE</version>
+</dependency>
+
+	Spring Web MVC
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-webmvc</artifactId>
+	<version>4.2.4.RELEASE</version>
+</dependency>
+
+	JSTL
+<dependency>
+	<groupId>jstl</groupId>
+	<artifactId>jstl</artifactId>
+	<version>1.2</version>
+</dependency>
+
+	Java Servlet API 2.5
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>servlet-api</artifactId>
+	<version>2.5</version>
+</dependency>
+
+	Tomcat Maven Plugin
+<dependency>
+	<groupId>org.apache.tomcat.maven</groupId>
+	<artifactId>common-tomcat-maven-plugin</artifactId>
+	<version>2.2</version>
+</dependency>
+
+	Tomcat 8.0.30 Servlet API
+<dependency>
+	<groupId>org.apache.tomcat</groupId>
+	<artifactId>tomcat-servlet-api</artifactId>
+	<version>8.0.30</version>
+</dependency>
+
+	Java Server Page  	API 2.2
+<dependency>
+	<groupId>javax.servlet.jsp</groupId>
+	<artifactId>jsp-api</artifactId>
+	<version>2.2</version>
+</dependency>
+
+	Mavin Plugin Tools Java 5 Annotations 3.4
+<dependency>
+	<groupId>org.apache.maven.plugin-tools</groupId>
+	<artifactId>maven-plugin-annotations</artifactId>
+	<version>3.4</version>
+</dependency>
+
+	Apache Maven Eclipse Plugin 2.9
+<dependency>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-eclipse-plugin</artifactId>
+	<version>2.9</version>
+</dependency>
+
+	Apache Maven Eclipse Plugin 2.10
+<dependency>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-eclipse-plugin</artifactId>
+	<version>2.10</version>
+</dependency>
+
+	Jackson-Mapper
+<dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-mapper-asl</artifactId>
+    <version>1.9.12</version>
+</dependency>
+
+	For Spring-boot project POM.xml file
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+
+	Sanselan
+<dependency>
+	<groupId>org.apache.sanselan</groupId>
+	<artifactId>sanselan</artifactId>
+	<version>0.97-incubator</version>
+</dependency>
