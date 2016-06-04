@@ -10,9 +10,9 @@ import java.util.List;
 import com.gmail.ichglauben.textfilereader.core.utils.concretes.TextFileValidator;
 
 public abstract class AbstractTextfileReader {
-
+	private static final  Charset charset = Charset.forName("ISO-8859-1");
+	
 	protected static List<String> readFile(File file) {
-		Charset charset = Charset.forName("ISO-8859-1");
 		if (null != file) {
 			if (TextFileValidator.valid(file)) {
 				try {
@@ -26,7 +26,6 @@ public abstract class AbstractTextfileReader {
 	}
 
 	protected static List<String> readFile(Path file) {
-		Charset charset = Charset.forName("ISO-8859-1");
 		if (null != file) {
 			if (TextFileValidator.valid(file)) {
 				try {
@@ -40,7 +39,6 @@ public abstract class AbstractTextfileReader {
 	}
 
 	protected static List<String> readFile(String path) {
-		Charset charset = Charset.forName("ISO-8859-1");
 		File file = null;
 		if (null != path) {
 			if (null != (file = new File(path))) {
