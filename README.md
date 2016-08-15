@@ -1,10 +1,11 @@
 # <h2>Text File Reader</h2>
-A simple Java solution for reading a text file. It contains a single abstract class with an overloaded single argument method "readFile", that returns a List object of type String containing the lines in the text file. The argument can be a Path, File or String path to the file.
+A simple Java solution for reading a text file. It contains one abstract class with a single argument mehtod "readFile" that returns a List object of type String that contains the lines of the text file. This project also contains one concrete child class with single argument mehtod "readTextFile". This child class calls it's parent methods and returns a List object.
 
-<h2>Usage</h2>
-Download or clone the project -
-Generate a jar library -
-Then include the jar in the project's build and call at will.
+<h2>Abstract Class Usage</h2>
+Extend the base class with either overriding the parent's methods or call and return the parent's methods.
+
+<h2>Concrete Class Usage</h2>
+Generate a jar file then include it in your project's build path and call the child's readTextFile method.
 
 <h2>Motivation</h2>
 I suppose its a lazy reason but I did not want to have to type the code from scratch any time a project I am working requires the ability to read a text file.
