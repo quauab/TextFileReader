@@ -1,17 +1,39 @@
-# <h2>Text File Reader</h2>
-A simple Java solution for reading a text file. It contains one abstract class with a single argument mehtod "readFile" that returns a List object of type String that contains the lines of the text file. This project also contains one concrete child class with single argument mehtod "readTextFile". This child class calls it's parent methods and returns a List object.
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="https://dl.dropboxusercontent.com/u/50203839/web/sites/resources/graphics/icons/favicon.ico" type="image/x-icon" />
 
-<h2>Installation</h2>
-<ol>
-  <li>Download the project's zip</li>
-  <li>Compile the project</li>
-  <li>Generate a jar file</li>
-  <li>Add the jar the project's build path</li>
-  <li>Call from the TextFileReader concrete class or sub-class it's parent</li>
-</ol>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<h2>Motivation</h2>
-Working on a previous project, I needed the ability to read from a text file, so I created a Java library to facilitate that task. And I uploaded to Github as a reference or possible library for others.
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<h2>Info</h2>
-This project does not contain any test cases but some may be added after cloning. The readFile method will either return a List object containing the lines of text upon successful read or null if otherwise.
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<title>TextFileReader</title>
+	</head>
+	<body class="container">		
+		<main class="content" id="content">
+			<div class="row">
+				<div class="col-sm-3" id="colleft">				
+					<div class="jumbotron" id="jumboleft">
+					</div>
+				</div>
+				
+				<div class="col-sm-9" id="colright">					
+					<div class="jumbotron" id="jumboright"></div>
+				</div>
+			</div>
+		</main>
+		
+		<footer class="panel-footer clearfix" id="footer"></footer>		
+	</body>
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/50203839/web/sites/resources/github/css/style_e.css">
+	<script src="https://dl.dropboxusercontent.com/u/50203839/web/sites/resources/github/js/resources_0.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/50203839/web/sites/resources/github/js/data.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/50203839/web/sites/resources/github/js/start.js"></script>
+</html>	
