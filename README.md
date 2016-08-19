@@ -1,5 +1,5 @@
 <h2>Text File Reader</h2>
-A simple Java solution for reading a text file. It contains one abstract class with a single argument mehtod "readFile" that returns a List object of type String that contains the lines of the text file. This project also contains one concrete child class with single argument mehtod "readTextFile". This child class calls it's parent methods and returns a List object.
+A simple Java solution for reading a text file. It contains one abstract class with a single argument method "readFile" that returns a List object of type String that contains the lines of the text file. This project also contains one concrete child class with single argument method "readTextFile". This child class calls it's parent methods and returns a List object.
 
 <h2>Installation</h2>
 <ol>
