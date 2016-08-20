@@ -6,8 +6,7 @@ A simple Java solution for reading a text file. It contains one abstract class w
   <li>Download the project's zip</li>
   <li>Compile the project</li>
   <li>Generate a jar file</li>
-  <li>Add the jar to the project's build path</li>
-  <li>Call from the TextFileReader concrete class or sub-class it's parent</li>
+  <li>Add jar as external library reference</li>
 </ol>
 
 <h2>Motivation</h2>
