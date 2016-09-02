@@ -1,5 +1,5 @@
 <h2>Text File Reader</h2>
-Read text files. A simple Java solution for reading a text file and returns the file's lines in a List of type String.
+Read text files.
 
 <h2>Installation</h2>
 <ol>
@@ -14,4 +14,3 @@ Working on a previous project, I needed the ability to read from a text file, so
 
 <h2>Info</h2>
 This project does not contain any test cases.
-
